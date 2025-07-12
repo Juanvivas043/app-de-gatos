@@ -51,7 +51,9 @@ function App () {
     <main>
       <h1>App de Gatos 🐱</h1>
       {fact && <p>{fact}</p>}
-      {imageUrl && <img src={`${imageUrl}`} alt={`imagen extraida usando los primeras 3 palabras de ${fact}`} />}
+      <div>
+        {imageUrl && <img src={`${imageUrl}`} alt={`imagen extraida usando los primeras 3 palabras de ${fact}`} />}
+      </div>
       <button onClick={handleClick}>Otro Facto</button>
     </main>
   )
