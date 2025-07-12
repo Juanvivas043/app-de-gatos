@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './app.css'
 
 const CAT_ENDPOINT_RANDOM_FACT = 'https://catfact.ninja/fact'
-const CAT_PREFIX_URL = 'https:cataas.com'
+const CAT_PREFIX_URL = 'https://cataas.com'
 
 // const CAT_ENDPOINT_IMAGE_URL = `ttps://cataas.com/cat/says/${firstWord}?
 // size=50&color=red&json=true`
@@ -30,7 +30,7 @@ function App () {
     if (!fact) return
     const threeFisrtWords = fact.split(' ', 3).join(' ')
 
-    fetch(`https:cataas.com/cat/says/${threeFisrtWords}?size=50&color=red&json=true`)
+    fetch(`https://cataas.com/cat/says/${threeFisrtWords}?size=50&color=red&json=true`)
       .then(res => res.json())
       .then(response => {
         const { url } = response
