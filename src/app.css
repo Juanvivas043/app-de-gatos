@@ -6,9 +6,49 @@ main {
     max-width: 800px;
     margin: 0 auto;
     font-family: system-ui;
+    gap: 50px;
+    height: 80%;
+    background-color: #fdb95f; 
+    border-radius: 20px; 
+    box-shadow: 0px 0px 100px rgba(250, 46, 46, 0.2); 
+    border: 1px solid #ccc; 
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+
+h1 {
+    border-radius: 20px; 
+    background-color: #eb7547;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+}
+
+p {
+    height: 100px;
+    text-align: center;
+    font-weight: 500;
 }
 
 img {
-    max-width: 500px;
-    height: auto;
+    max-width: 400px;
+    height: 300px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 25px;
+  background: #fd6262;
+  border: 2px solid #e77979;
+  color: #3a3838;
+  width: 100px;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.main:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
